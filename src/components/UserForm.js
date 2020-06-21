@@ -6,7 +6,7 @@ const UserForm = () => {
 
   const [lastName, resetLastName, lastNameProps] = useInput("");
 
-  const submitHandler = e => {
+  const submitHandler = (e) => {
     e.preventDefault();
     alert(`Hola ${firstName} ${lastName}`);
   };
@@ -16,7 +16,7 @@ const UserForm = () => {
       <form onSubmit={submitHandler}>
         <div>
           <label>First Name</label>
-          <input type="number" {...firstNameProps} />
+          <input type="text" {...firstNameProps} />
           <label>Last Name</label>
           <input type="text" onChange={lastNameProps.onChange} />
         </div>

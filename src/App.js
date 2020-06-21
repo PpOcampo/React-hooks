@@ -5,11 +5,13 @@ import CounterOne from "./components/CounterOne";
 import CounterTwo from "./components/CounterTwo";
 import UserForm from "./components/UserForm";
 import FetchOne from "./components/FetchOne";
+import ExampleComponent from "base-react-components";
 
 function App() {
   return (
     <div className="App">
       <h1>React Hook -Samples</h1>
+      <ExampleComponent />
       <br />
       <br />
       DocTitle1
